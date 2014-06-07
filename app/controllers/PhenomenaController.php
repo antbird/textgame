@@ -1,10 +1,10 @@
 <?php
 
-class PhenomenonsController extends \BaseController {
+class PhenomenaController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
-	 * GET /phenomenons
+	 * GET /phenomena
 	 *
 	 * @return Response
 	 */
@@ -15,7 +15,7 @@ class PhenomenonsController extends \BaseController {
 
 	/**
 	 * Show the form for creating a new resource.
-	 * GET /phenomenons/create
+	 * GET /phenomena/create
 	 *
 	 * @return Response
 	 */
@@ -26,7 +26,7 @@ class PhenomenonsController extends \BaseController {
 
 	/**
 	 * Store a newly created resource in storage.
-	 * POST /phenomenons
+	 * POST /phenomena
 	 *
 	 * @return Response
 	 */
@@ -37,7 +37,7 @@ class PhenomenonsController extends \BaseController {
 
 	/**
 	 * Display the specified resource.
-	 * GET /phenomenons/{id}
+	 * GET /phenomena/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -49,7 +49,7 @@ class PhenomenonsController extends \BaseController {
 
 	/**
 	 * Show the form for editing the specified resource.
-	 * GET /phenomenons/{id}/edit
+	 * GET /phenomena/{id}/edit
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -61,7 +61,7 @@ class PhenomenonsController extends \BaseController {
 
 	/**
 	 * Update the specified resource in storage.
-	 * PUT /phenomenons/{id}
+	 * PUT /phenomena/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -73,7 +73,7 @@ class PhenomenonsController extends \BaseController {
 
 	/**
 	 * Remove the specified resource from storage.
-	 * DELETE /phenomenons/{id}
+	 * DELETE /phenomena/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
