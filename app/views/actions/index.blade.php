@@ -1,0 +1,1 @@
+/home/vagrant/Code/Laravel/app/views/actions/index.blade.php
