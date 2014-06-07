@@ -1,6 +1,6 @@
 <?php
 
-class Condition extends \Eloquent {
+class Trigger extends \Eloquent {
 	protected $fillable = [];
 
 	public function phenomena()

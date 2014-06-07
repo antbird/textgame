@@ -20,6 +20,8 @@ class CreatePhenomenaTable extends Migration {
 			$table->foreign('action_id')->references('id')->on('actions');
 			$table->integer('zone_id')->unsigned()->index();
 			$table->foreign('zone_id')->references('id')->on('zones');
+			$table->integer('new_zone')->unsigned()->index();
+			$table->foreign('new_zone')->references('id')->on('zones');
 			$table->integer('priority')->index();
 			$table->string('description');
 			$table->timestamps();

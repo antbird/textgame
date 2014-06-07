@@ -1,0 +1,1 @@
+/home/vagrant/Code/Laravel/app/views/triggers/edit.blade.php
