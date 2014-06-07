@@ -9,8 +9,6 @@ class UsersTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
 
-		User::truncate();
-
 		foreach(range(1, 10) as $index)
 		{
 			User::create([

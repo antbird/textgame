@@ -9,8 +9,6 @@ class ZonesTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
 
-		Zone::truncate();
-
 		foreach(range(1, 10) as $index)
 		{
 			Zone::create([

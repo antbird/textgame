@@ -12,11 +12,16 @@ class DatabaseSeeder extends Seeder {
 		Eloquent::unguard();
 
 		DB::statement('SET FOREIGN_KEY_CHECKS = 0');
+
+		Zone::truncate();
+		User::truncate();
+		Action::truncate();
+		Phenomenon::truncate();
 		
 		$this->call('ZonesTableSeeder');
 		$this->call('UsersTableSeeder');
 		$this->call('ActionsTableSeeder');
-		$this->call('EventsTableSeeder');
+		$this->call('PhenomenonsTableSeeder');
 	}
 
 }

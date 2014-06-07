@@ -9,8 +9,6 @@ class ActionsTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
 
-		Action::truncate();
-
 		Action::create([
 			'name' => 'north',
 			'description' => $faker->sentence($nbWords = 6),

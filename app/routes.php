@@ -18,8 +18,9 @@ Route::get('/', function()
 
 Route::resource('zones', 'ZonesController');
 Route::resource('actions', 'ActionsController');
-Route::resource('events', 'EventsController');
+Route::resource('phenomenons', 'PhenomenonsController');
 
+//MASTER COMPUTER
 Route::get('action/{id}', function($id)
 {
 	//check if valid action
@@ -30,9 +31,9 @@ Route::get('action/{id}', function($id)
 
 	return $action;
 
-	//go through each event based on priority and matching conditions
+	//go through each phenomenon based on priority and matching conditions
 
-	//execute triggers for matching event
+	//execute triggers for matching phenomenon
 
 	/* print out current zone name & description
 	(basic, later we'll push json data to update each affected gui panel) */
