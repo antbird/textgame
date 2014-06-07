@@ -1,0 +1,1 @@
+/home/vagrant/Code/Laravel/app/views/conditions/create.blade.php

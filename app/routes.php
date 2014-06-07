@@ -30,10 +30,14 @@ Route::get('action/{id}', function($id)
 		return "Invalid action.";
 	}
 
+	//possible action type? different controller routing | movement/combat/item use/etc
+
 	return $action;
 
 	$phenomena = Phenomenon::with('condition', 'trigger') //go through each phenomenon based on priority and matching conditions
 		->where('action', '=', $id)
+		->where('zone_id', '=', $player->zone_id)
+		->orWhere('zone_id', '=', 0)
 		->orderBy('priority', 'desc')
 		->get();
 
