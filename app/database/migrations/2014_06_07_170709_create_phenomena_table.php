@@ -32,7 +32,7 @@ class CreatePhenomenaTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('phenomenons');
+		Schema::drop('phenomena');
 	}
 
 }
