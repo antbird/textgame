@@ -26,6 +26,15 @@ class PhenomenaTableSeeder extends Seeder {
 			'priority' => 75,
 			'description' => $faker->paragraph($nbSentences = 3),
 		]);
+
+		Phenomenon::create([
+			'name' => 'ADMIN: Traverse north from zone 3 to zone 4.',
+			'action_id' => 1,
+			'zone_id' => 3,
+			'new_zone' => 4,
+			'priority' => 75,
+			'description' => $faker->paragraph($nbSentences = 3),
+		]);
 		
 		Phenomenon::create([
 			'name' => 'Attempt to traverse north when nothing is north.',

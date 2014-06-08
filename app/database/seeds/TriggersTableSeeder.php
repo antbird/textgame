@@ -10,10 +10,7 @@ class TriggersTableSeeder extends Seeder {
 		$faker = Faker::create();
 
 		Trigger::create([
-			'name' => 'Change ',
-			'field',
-			'value',
-			'description',
+			
 		]);	
 	}
 

@@ -9,8 +9,11 @@ class ConditionsTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
 
-		Condition::create([
-			
+		Condition::create([		
+			'name' => 'Player_is_admin',
+			'field' => 'player.id',
+			'value' => 1,
+			'description' => 'You are not an admin!',
 		]);	
 	}
 
